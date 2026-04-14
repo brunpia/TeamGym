@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="750.0"
+            prefWidth="1000.0"
+            style="-fx-background-color: #f2f5fa;"
+            xmlns="http://javafx.com/javafx/23"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="teamgym.TeamGymController">
+   <children>
+      <Label layoutX="23.0" layoutY="26.0" text="TeamGym-Tumbling" textFill="#423d8d">
+         <font>
+            <Font name="Apple Braille" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="125.0" text="Serie">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="125.0" text="Gymnast">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="637.0" layoutY="44.0" text="Element">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="907.0" layoutY="18.0" text="PiaBrun" textAlignment="RIGHT">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="foroverserieKnapp" layoutX="24.0" layoutY="171.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#velgForover" style="-fx-text-fill: black; -fx-background-color: white;" text="Foroverserie" />
+      <Button fx:id="bakoverserieKnapp" layoutX="24.0" layoutY="212.0" mnemonicParsing="false" onAction="#velgBakover" style="-fx-background-color: white; -fx-text-fill: black;" text="Bakoverserie" />
+      <Button fx:id="mixserieKnapp" layoutX="24.0" layoutY="253.0" mnemonicParsing="false" onAction="#velgMixserie" style="-fx-background-color: white; -fx-text-fill: black;" text="Mixserie" />
+      <Button fx:id="gymnast1Knapp" layoutX="311.0" layoutY="171.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#velgGymnast1" style="-fx-text-fill: black; -fx-background-color: white;" text="1" />
+      <Button fx:id="gymnast2Knapp" layoutX="311.0" layoutY="212.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#velgGymnast2" style="-fx-text-fill: black; -fx-background-color: white;" text="2" />
+      <Button fx:id="gymnast3Knapp" layoutX="311.0" layoutY="253.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#velgGymnast3" style="-fx-text-fill: black; -fx-background-color: white;" text="3" />
+      <Button fx:id="hjulKnapp" contentDisplay="CENTER" layoutX="637.0" layoutY="90.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilHjul" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_hjul.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="stiftKnapp" contentDisplay="CENTER" layoutX="637.0" layoutY="130.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilStift" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_stift.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="saltoKnapp" contentDisplay="CENTER" layoutX="637.0" layoutY="172.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilSalto" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_salto.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="saltoSkruKnapp" contentDisplay="CENTER" layoutX="637.0" layoutY="213.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilSaltoSkru" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_salto_skru.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="dobbelSaltoKnapp" contentDisplay="CENTER" layoutX="637.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilDobbelSalto" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_dobbel_salto.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="araberKnapp" contentDisplay="CENTER" layoutX="676.0" layoutY="90.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilAraber" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_araber.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="flikkKnapp" contentDisplay="CENTER" layoutX="676.0" layoutY="131.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilFlikk" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_flikk.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backKnapp" contentDisplay="CENTER" layoutX="676.0" layoutY="172.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilBack" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_back.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backSkruKnapp" contentDisplay="CENTER" layoutX="676.0" layoutY="213.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilBackSkru" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_back_skru.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="dobbelBackKnapp" contentDisplay="CENTER" layoutX="676.0" layoutY="254.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="31.0" mnemonicParsing="false" onAction="#leggTilDobbelBack" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/symbol_dobbel_back.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backspaceSerieKnapp" cancelButton="true" layoutX="24.0" layoutY="294.0" minWidth="53.0" mnemonicParsing="false" onAction="#velgBackspaceSerie" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: white;" text="back.serie">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="45.0">
+               <image>
+                  <Image url="@images/symbol_backspace.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backspaceGymnastKnapp" cancelButton="true" layoutX="311.0" layoutY="294.0" minWidth="53.0" mnemonicParsing="false" onAction="#velgBackspaceGymnast" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: white;" text="back.gymnast">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="45.0">
+               <image>
+                  <Image url="@images/symbol_backspace.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="backspaceElementKnapp" cancelButton="true" layoutX="637.0" layoutY="294.0" minWidth="53.0" mnemonicParsing="false" onAction="#velgBackspaceElement" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: white;" text="back.element">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="45.0">
+               <image>
+                  <Image url="@images/symbol_backspace.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <MenuButton layoutX="910.0" layoutY="48.0" mnemonicParsing="false" text="Meny">
+        <items>
+          <MenuItem fx:id="lagreKnapp" mnemonicParsing="false" onAction="#velgLagre" text="Lagre" />
+          <MenuItem fx:id="utforskKnapp" mnemonicParsing="false" onAction="#velgUtforsk" text="Utforsk" />
+            <MenuItem fx:id="nullstillKnapp" mnemonicParsing="false" onAction="#velgNullstill" text="Nullstill" />
+            <MenuItem fx:id="loggUtKnapp" mnemonicParsing="false" onAction="#velgLoggUt" text="Logg ut" />
+        </items>
+      </MenuButton>
+      <Label layoutX="24.0" layoutY="343.0" text="Poeng">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="24.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="24.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="24.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="383.0" text="Foroverserie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="311.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="311.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="311.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="311.0" layoutY="383.0" text="Bakoverserie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="637.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="637.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="40.0" layoutX="637.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/symbol_person3.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="637.0" layoutY="383.0" text="Mixserie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="g1fPoeng" layoutX="80.0" layoutY="427.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g2fPoeng" layoutX="80.0" layoutY="487.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g3fPoeng" layoutX="80.0" layoutY="547.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g1fElementer" layoutX="118.0" layoutY="427.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g2fElementer" layoutX="118.0" layoutY="487.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g3fElementer" layoutX="118.0" layoutY="547.0" style="-fx-text-fill: grey;" text="" />
+
+      <Label fx:id="g1bPoeng" layoutX="368.0" layoutY="427.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g2bPoeng" layoutX="368.0" layoutY="487.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g3bPoeng" layoutX="368.0" layoutY="547.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g1bElementer" layoutX="405.0" layoutY="427.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g2bElementer" layoutX="405.0" layoutY="487.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g3bElementer" layoutX="405.0" layoutY="547.0" style="-fx-text-fill: grey;" text="" />
+
+      <Label fx:id="g1mPoeng" layoutX="693.0" layoutY="429.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g2mPoeng" layoutX="693.0" layoutY="489.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g3mPoeng" layoutX="693.0" layoutY="549.0" style="-fx-text-fill: grey;" text="0.0" />
+      <Label fx:id="g1mElementer" layoutX="731.0" layoutY="429.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g2mElementer" layoutX="731.0" layoutY="489.0" style="-fx-text-fill: grey;" text="" />
+      <Label fx:id="g3mElementer" layoutX="731.0" layoutY="549.0" style="-fx-text-fill: grey;" text="" />
+
+      <Label fx:id="trekkLabel" layoutX="637.0" layoutY="594.0" style="-fx-text-fill: red;" text="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="beregn" layoutX="24.0" layoutY="627.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBeregn" prefHeight="59.0" prefWidth="257.0" style="-fx-text-fill: white; -fx-background-color: green; -fx-font-size: 30px;" text="Beregn">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="totalLabel" layoutX="306.0" layoutY="637.0" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
